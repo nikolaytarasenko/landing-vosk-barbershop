@@ -11,7 +11,7 @@ html {
 body {
   height: 100%;
   font-family: $font-family;
-  background: $color-white;
+  background: $color-dark;
   color: $color-white;
   overflow-x: hidden;
 }
@@ -37,6 +37,7 @@ h4,
 h5,
 h6 {
   font-family: 'Apex Mk3', 'Montserrat', sans-serif;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -53,7 +54,9 @@ a {
 }
 
 p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  color: #8d8d8d;
+  line-height: 28px;
 }
 
 img {
@@ -75,11 +78,22 @@ ul {
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 27px;
-    line-height: 33px;
-    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 50px;
     margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 76px;
+      height: 2px;
+      background: #454545;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: 28px;
@@ -124,88 +138,15 @@ ul {
   }
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 2.875rem;
-  margin: 0;
-}
-
-.button {
-  font-family: 'Fira Sans', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  background: $color-violet;
-  color: #ffffff;
-  border: 0;
-  border-radius: 8px;
-  padding: 14px 23px;
-  transition: 0.15s ease-out;
-
-  &:hover {
-    background: darken($color-violet, 10);
-  }
-
-  &_transparent {
-    background-color: transparent;
-    border: 2px solid $color-grey;
-    color: $color-violet;
-    transition: background-color 0.15s ease-out;
-
-    &:hover {
-      background-color: $color-violet;
-      border-color: $color-violet;
-      color: $color-white;
-    }
-  }
-
-  &_start {
-    background-color: $color-violet;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    padding: 16px 32px;
-    transition: background-color 0.15s ease-out;
-
-    &:hover {
-      background: darken($color-violet, 10);
-      text-decoration: none;
-      color: $color-white;
-    }
-  }
-}
-
 .hide {
   opacity: 0;
   visibility: hidden;
 }
 
-.text-blue-light {
-  color: $color-violet;
+.text-gold {
+  color: $color-gold;
 }
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.order-first {
-  order: 1;
-
-  @include media-breakpoint-down(sm) {
-    order: -1;
-  }
-}
-
-.order-middle-1 {
-  @include media-breakpoint-down(md) {
-    order: 1;
-  }
-}
-
-.order-small-1 {
-  @include media-breakpoint-down(sm) {
-    order: 1;
-  }
 }
