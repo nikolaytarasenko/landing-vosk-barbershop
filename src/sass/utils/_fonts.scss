@@ -1,39 +1,19 @@
 @font-face {
-  font-family: 'Inter';
-  src: local('Inter-Light'),
-  url('../font/Inter-Light.woff2') format('woff2'),
-  url('../font/Inter-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: local('Inter-Regular'),
-  url('../font/Inter-Regular.woff2') format('woff2'),
-  url('../font/Inter-Regular.woff') format('woff');
+  font-family: 'Montserrat';
+  src: local('Montserrat-Regular'),
+  url('../font/Montserrat-Regular.woff2') format('woff2'),
+  url('../font/Montserrat-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: local('Inter-Medium'),
-  url('../font/Inter-Medium.woff2') format('woff2'),
-  url('../font/Inter-Medium.woff') format('woff');
+  font-family: 'Apex Mk3';
+  src: local('Apex Mk3-Medium'),
+  url('../font/Apex Mk3-Medium.woff2') format('woff2'),
+  url('../font/Apex Mk3-Medium.woff') format('woff');
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: local('Inter-SemiBold'),
-  url('../font/Inter-SemiBold.woff2') format('woff2'),
-  url('../font/Inter-SemiBold.woff') format('woff');
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
