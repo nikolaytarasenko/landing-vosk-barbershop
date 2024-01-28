@@ -52,6 +52,12 @@
     font-size: 22px;
   }
 
+  &__description,
+  &__phone,
+  &__address {
+    color: $color-white;
+  }
+
   &__video-container {
     position: absolute;
     left: 0;

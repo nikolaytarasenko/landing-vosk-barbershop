@@ -1,0 +1,19 @@
+.relax {
+  background: url("../img/relax-bg.png") center/cover no-repeat;
+
+  &__card {
+    text-align: center;
+
+    &-img {
+      margin-bottom: 25px;
+    }
+
+    &-title {
+      color: $color-gold;
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+  }
+}
