@@ -1,5 +1,6 @@
 // import $ from 'jquery';
 import AOS from 'aos';
+import 'fslightbox'
 
 const initStickyHeader = e => {
   const header = document.querySelector('.header');

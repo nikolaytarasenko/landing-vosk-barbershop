@@ -1,0 +1,42 @@
+.team {
+  padding-top: 0;
+
+  &__heading {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    &:hover {
+      .team__card-img {
+        opacity: 0.8;
+      }
+
+      .team__card-name {
+        color: $color-gold;
+      }
+    }
+
+    &-img {
+      margin-bottom: 15px;
+      transition: 0.15s ease;
+    }
+
+    &-name {
+      font-size: 40px;
+      transition: 0.15s ease;
+    }
+  }
+}
