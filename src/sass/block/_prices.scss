@@ -8,6 +8,10 @@
     margin-bottom: 80px;
     text-align: center;
 
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 50px;
+    }
+
     &::after {
       left: 50%;
       transform: translateX(-50%);
@@ -25,6 +29,10 @@
     color: #8d8d8d;
     padding: 15px 0;
 
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
+
     &:nth-child(odd) {
       background: #2c2c2c;
     }
@@ -38,14 +46,29 @@
       color: #e1e1e1;
       text-transform: uppercase;
       padding: 20px 0;
+
+      @include media-breakpoint-down(xs) {
+        .prices__item-name,
+        .prices__item-price {
+          font-size: 20px;
+        }
+      }
     }
 
     &-name {
       flex: 3;
+
+      @include media-breakpoint-down(xs) {
+        flex: 1;
+      }
     }
 
     &-price {
       flex: 2;
+
+      @include media-breakpoint-down(xs) {
+        flex: 1;
+      }
     }
 
     &-name,

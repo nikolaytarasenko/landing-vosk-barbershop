@@ -4,8 +4,16 @@
   &__card {
     text-align: center;
 
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+
     &-img {
       margin-bottom: 25px;
+
+      @include media-breakpoint-down(xs) {
+        max-width: 120px;
+      }
     }
 
     &-title {

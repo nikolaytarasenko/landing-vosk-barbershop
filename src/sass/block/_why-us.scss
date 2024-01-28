@@ -1,6 +1,10 @@
 .why-us {
   &__title {
     margin-bottom: 60px;
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 50px;
+    }
   }
 
   &__row {
@@ -12,8 +16,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 50px 0;
+    padding: 50px 0 50px 15px;
     margin-left: auto;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      max-width: 100%;
+    }
   }
 
   &__list {
@@ -27,6 +36,10 @@
     color: #e1e1e1;
     font-size: 20px;
     padding-right: 15px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 20px;

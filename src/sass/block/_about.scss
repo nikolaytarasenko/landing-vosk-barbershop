@@ -1,5 +1,21 @@
 .about {
   &__content {
     padding-left: 40px;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+  }
+
+  &__img-wrapper {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__img {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
   }
 }

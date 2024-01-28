@@ -1,13 +1,29 @@
 .contacts {
+  &__card-container {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+  }
+
   &__card {
     height: 100%;
     background: #2c2c2c;
     padding: 4rem;
     text-align: center;
 
+    @include media-breakpoint-down(md) {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
     &-title {
       margin-bottom: 20px;
       font-size: 40px;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 28px;
+      }
     }
 
     &-text {
