@@ -1,0 +1,16 @@
+.information {
+  padding: 0 0 50px;
+
+  &__list {
+    color: #8d8d8d;
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
